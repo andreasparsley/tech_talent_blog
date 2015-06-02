@@ -30,10 +30,10 @@
 		<h4>Comments</h4>
 	</div>
 
-	<%= @blog_post.comments.each do |comment| %>
+	<% @blog_post.comments.each do |comment| %>
 	<div class="panel-body">
 		<p><strong><%= comment.author %></strong> said: </p>
-		<p><%= comment.comment_entry %></p>
+		<p><%= comment.comment_enty %></p>
     <p><span class="posted-at"><%= comment.created_at.strftime('%m/%d/%y at %H:%MS') %></span></p>
 	</div>
 	<% end %>
